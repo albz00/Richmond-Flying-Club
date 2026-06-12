@@ -275,9 +275,9 @@
         <div class="grid items-end gap-10 xl:grid-cols-[minmax(0,1fr)_380px] xl:gap-12">
           <div class="max-w-3xl min-w-0">
             <h1
-              class="mt-6 text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+              class="mt-6 text-4xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl"
             >
-              Whatever you fly,<br />it&rsquo;s welcome here.
+              Richmond Area RC Club.<br />Model aviation in Central Virginia.
             </h1>
             <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl">
               One of the best RC model aircraft flying fields in Central Virginia, near Shirley
@@ -299,7 +299,7 @@
             </div>
           </div>
 
-          <div class="hidden xl:block xl:justify-self-end">
+          <div class="hidden xl:block xl:-translate-y-12 xl:justify-self-end">
             <div class="rounded-2xl border border-white/15 bg-white/10 p-7 shadow-2xl shadow-black/30 backdrop-blur">
               <p class="text-xs font-bold tracking-[0.2em] text-club-red-300 uppercase">Club Meetings</p>
               <p class="mt-3 text-lg font-bold leading-snug text-white">
@@ -420,6 +420,16 @@
                 Lowe&rsquo;s in your area. There are bins outside these businesses where you can
                 dispose of them safely.
               </p>
+              <p class="mt-4 text-sm leading-relaxed text-navy-100/80">
+                Let your friends scan this code from their phones to get to this RARC site
+                easily.
+              </p>
+              <img
+                src="https://www.richmondarearc.com/uploads/2/4/1/2/24123396/published/rarc.jpeg?1717323903"
+                alt="QR code for Richmond Area Radio Control website"
+                class="mt-4 h-36 w-36 rounded-xl bg-white p-2"
+                loading="lazy"
+              />
             </div>
 
             <div class="p-8 md:p-10">
