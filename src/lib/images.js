@@ -6,14 +6,19 @@ const photo = (id, alt) => ({
   alt,
 })
 
+export const clubLogo = photo(
+  '867c304b-a51e-4c33-68e4-00c74a2d2300',
+  'Richmond Area RC Flying Club logo',
+)
+
 export const siteImages = {
   hero: photo(
     'f18adeca-84c4-4cd6-fc5e-269dbcb3b600',
-    'White and red Extreme Flight Edge 540T RC stunt plane performing low flight over a grassy field',
+    'White and red Extreme Flight Edge 540T RC stunt plane performing low flight over the flying field',
   ),
   fieldSign: photo(
     '20e73b3c-f875-4c70-e4b3-0c6d85d26e00',
-    'Sign for Richmond R/C Field for model aircraft flying, set against trees and tall grass',
+    'Sign for Richmond R/C Field for model aircraft flying, set against trees',
   ),
   fieldOverview: photo(
     'c8375642-052e-4d73-4866-40bc8eff5e00',
@@ -25,9 +30,23 @@ export const siteImages = {
   ),
   fieldPanorama: photo(
     'e42e946b-d29b-416b-1215-da8c2f910d00',
-    'Two red and white RC airplanes flying over the grassy field with trees in the background',
+    'Two red and white RC airplanes flying over the field with trees in the background',
   ),
 }
+
+/** Photos used for the hero crossfade rotation. */
+export const heroSlides = [
+  siteImages.hero,
+  siteImages.fieldPanorama,
+  photo(
+    'bdb2eabf-b56d-4c91-c375-9482578b6a00',
+    'RC airplane in flight at the Richmond Area RC flying field',
+  ),
+  photo(
+    '2deb1be2-3f6e-4dba-e93d-e51cc0df6000',
+    'Blue and yellow and patriotic RC airplanes flying over the RARC field',
+  ),
+]
 
 export const highlightPhotos = [
   photo(
@@ -36,7 +55,7 @@ export const highlightPhotos = [
   ),
   photo(
     '96153c78-692d-4e3e-4abf-280eec55a000',
-    'Pilot watching a red, white, and blue RC biplane on the grass',
+    'Pilot watching a red, white, and blue RC biplane on the field',
   ),
   siteImages.fieldSign,
 ]
@@ -107,11 +126,11 @@ export const galleryPhotos = [
   ),
   photo(
     '4403dca4-fb10-4be6-a6a7-15dacf719c00',
-    'Red and white RC biplane resting on the grassy airfield',
+    'Red and white RC biplane resting on the airfield',
   ),
   photo(
     '96153c78-692d-4e3e-4abf-280eec55a000',
-    'Pilot watching a red, white, and blue RC biplane on the grass',
+    'Pilot watching a red, white, and blue RC biplane on the field',
   ),
   siteImages.fieldPanorama,
   siteImages.communityGroup,
