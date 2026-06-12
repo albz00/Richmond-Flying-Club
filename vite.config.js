@@ -10,22 +10,24 @@ const siteUrl = (process.env.SITE_URL || '').replace(/\/$/, '')
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: true,
+    port: 5173,
+    open: true,
+  },
   plugins: [
     svelte(),
     tailwindcss(),
     {
       name: 'html-seo-inject',
       transformIndexHtml(html) {
-        let result = html
-
         if (siteUrl) {
-          result = result.replaceAll('%SITE_URL%', siteUrl)
-        } else {
-          result = result.replace(/\s*<link rel="canonical"[^>]*>\n?/g, '')
-          result = result.replaceAll('%SITE_URL%', '')
-          result = result.replace(/\s*<meta property="og:url"[^>]*>\n?/g, '')
+          return html.replaceAll('%SITE_URL%', siteUrl)
         }
 
+        let result = html.replace(/\s*<link rel="canonical"[^>]*>\n?/g, '')
+        result = result.replace(/\s*<meta property="og:url"[^>]*>\n?/g, '')
+        result = result.replaceAll('%SITE_URL%', '')
         return result
       },
       closeBundle() {
